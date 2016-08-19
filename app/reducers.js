@@ -9,8 +9,18 @@ function appState(state = Immutable.Map({
    }
 }
 
+function standingsState(state = Immutable.Map({
+
+}), action = null) {
+   switch (action.type) {
+      default:
+         return state;
+   }
+}
+
 const rootReducer = combineReducers({
-   appState
+   appState,
+   standingsState
 });
 
 export default rootReducer;

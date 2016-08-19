@@ -19,10 +19,10 @@ exports.config = {
 
    files: {
       javascripts: {
-         joinTo: 'javascripts/belgarn.js'
+         joinTo: 'javascripts/kompiscrossen.js'
       },
       stylesheets: {
-         joinTo: 'stylesheets/belgarn.css'
+         joinTo: 'stylesheets/kompiscrossen.css'
       }
    },
 
