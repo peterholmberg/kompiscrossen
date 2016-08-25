@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import Standings from './standings';
+import Nav from './nav';
 
 class Root extends Component {
    constructor(props) {
@@ -11,8 +12,10 @@ class Root extends Component {
       return (
          <div>
             <h2>Kompiscrysten</h2>
+
             <Standings />
             <div className="content">
+               <Nav />
                {this.props.children}
             </div>
          </div>
