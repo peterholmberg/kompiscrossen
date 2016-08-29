@@ -10,12 +10,13 @@ class Root extends Component {
 
    render() {
       return (
-         <div>
-            <h2>Kompiscrysten</h2>
-
-            <Standings />
-            <div className="content">
-               <Nav />
+         <div className="kc-content-holder">
+            <h2 className="kc-logo">Kompiscrossen</h2>
+            <div className="kc-sidebar">
+               <Standings />
+            </div>
+            <Nav />
+            <div className="kc-page-content">
                {this.props.children}
             </div>
          </div>

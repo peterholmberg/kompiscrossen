@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link, IndexLink } from 'react-router';
 
 export default class Nav extends Component {
    constructor(props){
@@ -10,7 +11,7 @@ export default class Nav extends Component {
          <nav id="navbar" className="navbar navbar-static-top">
             <ul className="nav navbar-nav">
                <li>
-                  <a href="" className="main-nav-item"> Hem</a>
+                  <IndexLink className="main-nav-item" to="/">Nyheter</IndexLink>
                </li>
                <li>
                   <a href="" className="main-nav-item">Tävlingar</a>
