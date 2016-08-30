@@ -14,16 +14,16 @@ export default class Nav extends Component {
                   <IndexLink className="main-nav-item" to="/">Nyheter</IndexLink>
                </li>
                <li>
-                  <a href="" className="main-nav-item">Tävlingar</a>
+                  <IndexLink className="main-nav-item" to="/races">Tävlingar</IndexLink>
                </li>
                <li>
-                  <a href="" className="main-nav-item">Bilder</a>
+                  <IndexLink className="main-nav-item" to="/pictures">Bilder</IndexLink>
                </li>
                <li>
-                  <a href="" className="main-nav-item">Cyklarna</a>
+                  <IndexLink className="main-nav-item" to="/bikes">Cyklarna</IndexLink>
                </li>
                <li>
-                  <a href="" className="main-nav-item">Om</a>
+                  <IndexLink className="main-nav-item" to="/about">Om</IndexLink>
                </li>
             </ul>
          </nav>
