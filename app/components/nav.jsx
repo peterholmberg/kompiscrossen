@@ -17,9 +17,6 @@ export default class Nav extends Component {
                   <a href="" className="main-nav-item">Tävlingar</a>
                </li>
                <li>
-                  <a href="" className="main-nav-item">Tävlingar</a>
-               </li>
-               <li>
                   <a href="" className="main-nav-item">Bilder</a>
                </li>
                <li>
