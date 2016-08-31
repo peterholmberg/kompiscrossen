@@ -7,18 +7,29 @@ class News extends Component {
    }
 
    render(){
+      let { newsState } = this.props;
+      let { news } = newsState.toJS();
       return(
-         <div>Nyheter</div>
+         <div>
+            {news.map(post =>
+               <div key={post.id} className="kc-news-post">
+                  <label>{post.title}</label> <em className="kc-muted">av {post.author} {post.posted}</em>
+                  <div className="kc-news-content">
+                     {post.content}
+                  </div>
+               </div>
+            )}
+         </div>
       )
    }
 }
 
 function propProvider(reduxState, props) {
-   const { appState, news } = reduxState;
+   const { appState, newsState } = reduxState;
 
    return {
       appState,
-      news
+      newsState
    };
 }
 
