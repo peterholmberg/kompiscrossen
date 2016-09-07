@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
          <Router history={hashHistory}>
             <Route path='/' component={Root}>
                <IndexRedirect to='/news'/>
-               <Route path='/news' component={News}/>
-               <Route path='/races' component={Races}/>
-               <Route path='/pictures' component={Pictures}/>
-               <Route path='/bikes' component={Bikes}/>
-               <Route path='/about' component={About}/>
+               <Route path='news' component={News}/>
+               <Route path='races' component={Races}/>
+               <Route path='pictures' component={Pictures}/>
+               <Route path='bikes' component={Bikes}/>
+               <Route path='about' component={About}/>
             </Route>
          </Router>
       </Provider>,

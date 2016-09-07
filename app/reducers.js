@@ -20,6 +20,14 @@ function standingsState(state = Immutable.Map({
 
 function newsState(state = Immutable.Map({
    news: [{
+      id: 2,
+      title: 'Krossäsongen är igång!',
+      posted: '2016-09-06',
+      edited: '2016-09-07',
+      content:'Banan vid Sköndal är fixad med ny sträckning för i år.',
+      author: 'Peter'
+
+   },{
       id: 1,
       title: 'Ny sida!',
       posted: '2016-08-30',

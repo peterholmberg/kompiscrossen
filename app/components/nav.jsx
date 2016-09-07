@@ -10,23 +10,31 @@ export default class Nav extends Component {
       return(
          <nav id="navbar" className="navbar navbar-static-top">
             <ul className="nav navbar-nav">
-               <li>
+               <li className={this.activeClass('news')}>
                   <IndexLink className="main-nav-item" to="/">Nyheter</IndexLink>
                </li>
-               <li>
+               <li className={this.activeClass('races')}>
                   <IndexLink className="main-nav-item" to="/races">Tävlingar</IndexLink>
                </li>
-               <li>
+               <li className={this.activeClass('pictures')}>
                   <IndexLink className="main-nav-item" to="/pictures">Bilder</IndexLink>
                </li>
-               <li>
+               <li className={this.activeClass('bikes')}>
                   <IndexLink className="main-nav-item" to="/bikes">Cyklarna</IndexLink>
                </li>
-               <li>
+               <li className={this.activeClass('about')}>
                   <IndexLink className="main-nav-item" to="/about">Om</IndexLink>
                </li>
             </ul>
          </nav>
       );
    }
+
+   activeClass(routeName) {
+      return this.context.router.isActive(routeName, false) ? 'current-page-item' : null;
+   }
 }
+
+Nav.contextTypes = {
+   router: PropTypes.object.isRequired
+};
