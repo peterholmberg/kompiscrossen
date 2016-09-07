@@ -7,6 +7,9 @@ export const lang = {
       bikes: 'Cyklarna',
       about: 'Om'
    },
+   races: {
+     title: 'Tävlingar',
+   },
    about: {
       title:'Om',
       content: 'Jada jada jada'
