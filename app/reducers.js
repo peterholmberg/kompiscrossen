@@ -42,10 +42,22 @@ function newsState(state = Immutable.Map({
 
 function raceState(state = Immutable.Map({
    races: [{
-      id: 1,
-      title: 'Första testet av nya banan',
-      description: 'Jobbigt, stötigt och brötigt'
-   }]
+      id: 3,
+      title: '2016 #2',
+      description: 'Officiell Kompiscross på söndag 30 aug. Samling 9.30 vid Hästpojken (karta http://kartor.eniro.se/m/0sHro)',
+      date: '2016-09-13'
+   },{
+      id: 2,
+      title: '2016 #1',
+      description: 'Årets första deltävling',
+      date: '2016-09-06'
+   },
+      {
+         id: 1,
+         title: 'Första testet av nya banan',
+         description: 'Jobbigt, stötigt och brötigt',
+         date: '2016-09-04'
+      }]
 }), action = null) {
    switch (action.type) {
       default:

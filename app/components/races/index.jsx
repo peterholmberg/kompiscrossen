@@ -11,8 +11,12 @@ class Races extends Component {
       let {raceState} = this.props;
       let {races} = raceState.toJS();
       return (
-         <div>
+         <div className="kc-race-map">
+            <div>
+               <h4>Banan</h4>
+            </div>
             <div className="kc-race-list">
+               <h4>{lang.races.race}</h4>
                <div className="list-group">
                   {races.map(race =>
                      <a href="#" className="list-group-item" key={race.id}>
@@ -21,6 +25,8 @@ class Races extends Component {
                      </a>
                   )}
                </div>
+            </div>
+            <div className="kc-race-standings">
             </div>
          </div>
       )
