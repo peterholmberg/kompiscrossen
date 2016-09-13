@@ -12,10 +12,11 @@ export const lang = {
      race: 'Deltävlingar',
      course: {
         title: 'Banan'
-     }
+     },
+     results: 'Resultat'
    },
    about: {
       title:'Om',
       content: 'Jada jada jada'
    }
-}
+};

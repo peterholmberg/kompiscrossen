@@ -1,7 +1,8 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {lang} from '../../strings';
-import {RaceList} from './race-list';
+import RaceList from './race-list';
+import RaceResults from './race-results';
 
 class Races extends Component {
    constructor(props) {
@@ -10,7 +11,7 @@ class Races extends Component {
 
    render() {
       let {raceState} = this.props;
-      let {races} = raceState.toJS();
+      let {races, results} = raceState.toJS();
       return (
          <div>
             <div className="kc-race-info">
@@ -23,10 +24,12 @@ class Races extends Component {
                <h4>{lang.races.race}</h4>
                <RaceList races={races}/>
             </div>
-            <div className="kc-race-standings">
+            <div className="kc-race-results">
+               <h4>{lang.races.results}</h4>
+               <RaceResults results={results}/>
             </div>
          </div>
-      )
+      );
    }
 }
 

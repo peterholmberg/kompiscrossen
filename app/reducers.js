@@ -23,7 +23,7 @@ function newsState(state = Immutable.Map({
       edited: '',
       content: 'Dags för Hästpojken 2016',
       author: '2016'
-   },{
+   }, {
       id: 2,
       title: 'Krossäsongen är igång!',
       posted: '2016-09-06',
@@ -53,12 +53,12 @@ function raceState(state = Immutable.Map({
       title: '2016 #3',
       description: 'Hästpojken 2016',
       date: '2016-09-18'
-   },{
+   }, {
       id: 3,
       title: '2016 #2',
       description: 'Officiell Kompiscross på söndag 30 aug. Samling 9.30 vid Hästpojken (karta http://kartor.eniro.se/m/0sHro)',
       date: '2016-09-13'
-   },{
+   }, {
       id: 2,
       title: '2016 #1',
       description: 'Årets första deltävling',
@@ -69,6 +69,34 @@ function raceState(state = Immutable.Map({
          title: 'Första testet av nya banan',
          description: 'Jobbigt, stötigt och brötigt',
          date: '2016-09-04'
+      }],
+   results: [{
+      riderNo: 1,
+      name: 'Jacob Wihk',
+      position: 5,
+      points: 1,
+      category: 1
+   },
+      {
+         riderNo: 2,
+         name: 'Peter Holmberg',
+         position: 3,
+         points: 3,
+         category: 1
+      },
+      {
+         riderNo: 3,
+         name: 'Karl Börjesson',
+         position: 1,
+         points: 5,
+         category: 1
+      },
+      {
+         riderNo: 4,
+         name: 'Klas Gubbkjelle',
+         position: 2,
+         points: 4,
+         category: 1
       }]
 }), action = null) {
    switch (action.type) {

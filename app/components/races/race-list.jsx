@@ -17,7 +17,7 @@ export default class RaceList extends Component {
                </a>
             )}
          </div>
-      )
+      );
    }
 
    handleClick = ev => {
