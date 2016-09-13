@@ -14,7 +14,7 @@ export default class RaceResults extends Component {
                <div className="kc-results-tile">
                   <ul>
                      {mensEliteResults.map(result =>
-                        <li>
+                        <li key={result.riderNo}>
                            {result.name}
                         </li>)}
                   </ul>
