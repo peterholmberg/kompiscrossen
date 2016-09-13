@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {lang} from '../../strings';
+import {RaceList} from './race-list';
 
 class Races extends Component {
    constructor(props) {
@@ -11,20 +12,16 @@ class Races extends Component {
       let {raceState} = this.props;
       let {races} = raceState.toJS();
       return (
-         <div className="kc-race-map">
-            <div>
-               <h4>Banan</h4>
+         <div>
+            <div className="kc-race-info">
+               <h4>{lang.races.course.title}</h4>
+               <div className="kc-race-map">
+                  <img src="http://placekitten.com/500/400"/>
+               </div>
             </div>
             <div className="kc-race-list">
                <h4>{lang.races.race}</h4>
-               <div className="list-group">
-                  {races.map(race =>
-                     <a href="#" className="list-group-item" key={race.id}>
-                        <h4>{race.title}</h4>
-                        <p>{race.description}</p>
-                     </a>
-                  )}
-               </div>
+               <RaceList races={races}/>
             </div>
             <div className="kc-race-standings">
             </div>

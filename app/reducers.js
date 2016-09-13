@@ -17,6 +17,13 @@ function standingsState(state = Immutable.Map({}), action = null) {
 
 function newsState(state = Immutable.Map({
    news: [{
+      id: 3,
+      title: 'Hästpojken',
+      posted: '2016-09-13',
+      edited: '',
+      content: 'Dags för Hästpojken 2016',
+      author: '2016'
+   },{
       id: 2,
       title: 'Krossäsongen är igång!',
       posted: '2016-09-06',
@@ -42,6 +49,11 @@ function newsState(state = Immutable.Map({
 
 function raceState(state = Immutable.Map({
    races: [{
+      id: 4,
+      title: '2016 #3',
+      description: 'Hästpojken 2016',
+      date: '2016-09-18'
+   },{
       id: 3,
       title: '2016 #2',
       description: 'Officiell Kompiscross på söndag 30 aug. Samling 9.30 vid Hästpojken (karta http://kartor.eniro.se/m/0sHro)',

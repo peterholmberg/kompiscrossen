@@ -9,7 +9,10 @@ export const lang = {
    },
    races: {
      title: 'Tävlingar',
-     race: 'Deltävlingar'
+     race: 'Deltävlingar',
+     course: {
+        title: 'Banan'
+     }
    },
    about: {
       title:'Om',
