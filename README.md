@@ -1,5 +1,5 @@
 # kompiscrossen
 
-clone
-npm install
-npm run
+#### clone
+#### npm install
+#### npm run
