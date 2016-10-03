@@ -1,4 +1,6 @@
 import React, {Component, PropTypes} from 'react';
+import RaceResultsTile from './race-results-tile';
+import {lang} from '../../strings';
 
 export default class RaceResults extends Component {
    constructor(props) {
@@ -7,18 +9,37 @@ export default class RaceResults extends Component {
 
    render() {
       let {results} = this.props;
-      let mensEliteResults = results.filter(result => {return result.category === RaceResults.RaceCategories.MensElite;});
+
+      let mensEliteResults = results.filter(result => {
+         return result.category === RaceResults.RaceCategories.MensElite;
+      });
+      let womensEliteResults = results.filter(result => {
+         return result.category === RaceResults.RaceCategories.WomenElite;
+      });
+      let mensBResults = results.filter(result => {
+         return result.category === RaceResults.RaceCategories.MensB;
+      });
+      let womensBResults = results.filter(result => {
+         return result.category === RaceResults.RaceCategories.WomensB;
+      });
+      let youthResults = results.filter(result => {
+         return result.category === RaceResults.RaceCategories.Youth;
+      });
       return (
-         <div>
+         <div className="kc-block">
             {mensEliteResults && mensEliteResults.length > 0 ?
-               <div className="kc-results-tile">
-                  <ul>
-                     {mensEliteResults.map(result =>
-                        <li key={result.riderNo}>
-                           {result.name}
-                        </li>)}
-                  </ul>
-               </div> : null}
+               <RaceResultsTile title={lang.races.resultsTile.mensElite} results={mensEliteResults}/> : null}
+
+            {womensEliteResults && womensEliteResults.length > 0 ?
+               <RaceResultsTile title={lang.races.resultsTile.womensElite} results={womensEliteResults}/> : null}
+
+            {mensBResults && mensBResults.length > 0 ?
+               <RaceResultsTile title={lang.races.resultsTile.mensB} results={mensBResults}/> : null}
+
+            {womensBResults && womensBResults.length > 0 ?
+               <RaceResultsTile title={lang.races.resultsTile.womensB} results={womensBResults}/> : null}
+            {youthResults && youthResults.length > 0 ?
+               <RaceResultsTile title={lang.races.resultsTile.youth} results={youthResults}/> : null}
          </div>
       );
    }

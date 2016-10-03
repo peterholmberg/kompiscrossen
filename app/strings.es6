@@ -13,6 +13,13 @@ export const lang = {
      course: {
         title: 'Banan'
      },
+     resultsTile: {
+        mensElite: 'Herrar Elit',
+        womensElite: 'Damer Elit',
+        mensB: 'Herrar B',
+        womensB: 'Damer B',
+        youth: 'Ungdom'
+     },
      results: 'Resultat'
    },
    about: {

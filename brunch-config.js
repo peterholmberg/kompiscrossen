@@ -12,7 +12,7 @@ exports.config = {
 
    plugins: {
       babel: {
-         presets: ['es2015', 'react', 'stage-1'],
+         presets: ['es2015', 'react', 'stage-2'],
          pattern: /\.(es6|jsx|js)$/
       }
    },
