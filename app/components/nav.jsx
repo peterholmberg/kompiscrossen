@@ -23,6 +23,9 @@ export default class Nav extends Component {
                <li className={this.activeClass('bikes')}>
                   <IndexLink className="main-nav-item" to="/bikes">{lang.nav.bikes}</IndexLink>
                </li>
+               <li className={this.activeClass('stats')}>
+                  <IndexLink className="main-nav-item" to="/stats">{lang.nav.stats}</IndexLink>
+               </li>
                <li className={this.activeClass('about')}>
                   <IndexLink className="main-nav-item" to="/about">{lang.nav.about}</IndexLink>
                </li>

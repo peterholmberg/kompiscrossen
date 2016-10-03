@@ -8,6 +8,7 @@ import News from './components/news';
 import Races from './components/races';
 import Pictures from './components/pictures';
 import Bikes from './components/bikes';
+import Stats from './components/stats';
 import About from './components/about';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                <Route path='races' component={Races}/>
                <Route path='pictures' component={Pictures}/>
                <Route path='bikes' component={Bikes}/>
+               <Route path='stats' component={Stats}/>
                <Route path='about' component={About}/>
             </Route>
          </Router>

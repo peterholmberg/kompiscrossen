@@ -47,6 +47,13 @@ function newsState(state = Immutable.Map({
    }
 }
 
+function statsState(state = Immutable.Map({}), action = null){
+   switch(action.type) {
+      default:
+         return state;
+   }
+}
+
 function raceState(state = Immutable.Map({
    races: [{
       id: 4,
